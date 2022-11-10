@@ -1,0 +1,43 @@
+
+
+
+body {
+    background-color : green;
+}
+
+.important {
+    background-color: white;
+}
+
+#pullquote {
+    color: purple
+}
+
+ul li {
+    border: solid 1px red
+}
+
+img {
+    height: 100px; 
+    width: 100px;
+    border-radius: 50%
+}
+
+ul > li{
+    background-color: blue;
+}
+span {
+    color:red
+}
+
+#pullquote > span  {
+    color: white
+}
+
+p ~ span {
+    color: yellow
+}
+
+p + span {
+    color: red
+}

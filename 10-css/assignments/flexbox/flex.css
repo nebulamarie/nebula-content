@@ -1,0 +1,40 @@
+.flexContainer {
+    /* border */
+    border: 1px solid #000;
+    height: 100px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wap: wrap; */
+}
+
+
+.flexItem {
+    width: 75px;
+    height 75px;
+    background-color: black#;
+    margin-left:flex;
+    flex-wrap: wrap;
+
+}
+
+.flexItem{
+    width: 75px;
+    height: 75px;
+    width: auto;
+    height: auto;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
+
+.flexItem1{
+
+}
+
+.flexItem2{
+    
+}
+
+.flexItem3{
+   order: -1 
+}
+

@@ -1,0 +1,196 @@
+
+<!-- Create a grid of squares using CSS. The grid should be 10x10 and each square should be equal in size. The grid should fill the entire page. -->
+<!-- The grid should be responsive and should be able to fit on any screen size. To test your grid, you can use the responsive design mode in your -->
+<!-- browser. (Ctrl/CMD + Shift + M) Drag the edges of the viewport in this view to test your grid. -->
+<!-- Stretch Goals
+Using a hover effect, change the color of the individual squares when the mouse hovers over it. You can change it to any color. -->
+
+
+<!DOCTYPE html>
+
+</html>
+
+
+
+<head>    
+    <meta charset="utf-8">    
+    <title>Grid</title>   
+</head>
+
+<body>
+    <div class ="gridcontainer"> 
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+        <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+      <div></div>
+         <button class="btn-1"></button>
+       <div></div>
+         <button class="btn-1"></button>
+       <div></div>
+          <button class="btn-1"></button>
+       <div></div>
+         <button class="btn-1"></button>
+       <div></div>
+          <button class="btn-1"></button>
+       <div></div>
+         <button class="btn-1"></button>
+       <div></div>
+         <button class="btn-1"></button>
+       <div></div>
+          <button class="btn-1"></button>         
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+          <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+            <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+            <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+           <button class="btn-1"></button>
+        <div></div>
+            <button class="btn-1"></button>            
+    </div>
+
+</body>
+</html>
+
+
+     <style>    
+     *{
+      margin: 0px;
+     }
+     body{
+        height: 100vh;
+        width: 100vw;
+     }
+    .Grid {
+        color: rgb(49, 146, 195);
+        size: 20;
+    }
+    .gridcontainer div{
+        border: solid 1px rgb(225, 219, 219);
+    }
+
+    .gridcontainer {
+        display: grid;
+        background: rgb(0, 98, 128);
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-gap: 5px;
+    }
+    .btn-1 {
+        height: 100%;
+        border: none;
+        color: white;
+        background-color: blue;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 yellow;
+        transition: ease-out;
+        font-size: 2rem;
+        outline: none;
+
+    }
+
+ .btn-1:hover {
+        box-shadow: inset 300px 0 0 0 yellow;
+    }
+  .gridcontainer  div:hover {
+      box-shadow: inset 300px 0 0 0 yellow;
+    }
+   
+    </style>  
+   
+
+   

@@ -1,0 +1,75 @@
+<!-- Using flexbox create the holy grail layout. The header should be 100px tall, the footer should be 50px tall, and the main content should take up the rest of the space. The sidebar should be 200px wide, and the main content should take up the rest of the space. Use the following hierarchy:
+div flexbox-container ↳ div header ↳ div flexbox-item ↳ div main ↳ div sidebar ↳ div flexbox-item ↳ div content ↳ div flexbox-item ↳ div footer ↳ div flexbox-item -->
+
+
+<!DOCTYPE html> 
+
+<head>
+    <head class="container"
+</head>
+
+<body> 
+    <div> div</div>
+    <header class="flex header">Header</header>
+    <main class="flex-main">
+        <nav class="flex-nav"> sidenav</nav>
+        <article class="flex-article">maincontent</article>
+        <aside class="flex-aside">sidebar</aside>
+
+<footer>
+    <footer class="flex-foooter"> footer</footer>
+</body>
+
+</html>
+
+
+<style>
+* {
+    margin: 2px
+}
+
+body {
+    display: flex;
+    font-size: 24px;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.flex-header {
+    background-color: blue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.flex-main {
+    display: flex;
+    flex: 1;
+
+}
+
+.sidenav {
+    background-color: blue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.maincontent {
+    background-color: blue;
+    padding-top: 3rem;
+    flex: 3 3;
+} 
+
+.sidebar {
+    background-color: blue;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+
+.footer {
+    background-color: blue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+</style>

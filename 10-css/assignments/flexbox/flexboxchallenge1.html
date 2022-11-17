@@ -1,0 +1,47 @@
+<!-- Create a flex container with 2 rows of 3 items each. The items should be colored circles. (hint: border-radius: 50%). Center everything. Use the following hierarchy:
+div flexbox-container ↳ div row1 ↳ div flexbox-item ↳ div flexbox-item ↳ div flexbox-item ↳ div row2 ↳ div flexbox-item ↳ ... -->
+
+
+<!DOCTYPE html>
+
+<head>
+    <div class="container1"> 
+        <div>Inner div1</div>
+            <class id="row1"></class>
+        <div>Inner div2</div>
+            <class id="row2"></class>
+    </div>
+    </head>
+
+<body>
+    <div> </div>
+
+</body>
+
+
+
+</html>
+
+
+<style> 
+.container1 {
+/* border */
+display: flex;
+    border: solid 10px black;
+    height: 70%;
+    width: 90%;
+    justify-content: center;
+/*border */
+}
+
+.row1 {
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+</style>

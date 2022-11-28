@@ -5,17 +5,33 @@ div flexbox-container ↳ div row1 ↳ div flexbox-item ↳ div flexbox-item ↳
 <!DOCTYPE html>
 
 <head>
-    <div class="container1"> 
-        <div>Inner div1</div>
-            <class id="row1"></class>
-        <div>Inner div2</div>
-            <class id="row2"></class>
-    </div>
+
     </head>
 
 <body>
-    <div> </div>
+    <div class="layout">
+        <div class="container1"> 
 
+            <div class="row1">
+            
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+                   
+
+
+       
+            <div class="row1">
+            
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>   
+        </div>
+    </div>
 </body>
 
 
@@ -24,24 +40,43 @@ div flexbox-container ↳ div row1 ↳ div flexbox-item ↳ div flexbox-item ↳
 
 
 <style> 
+.layout{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+}
 .container1 {
 /* border */
 display: flex;
     border: solid 10px black;
-    height: 70%;
-    width: 90%;
+    height: 500px;
+    width: 500px;
     justify-content: center;
+    flex-direction: column;
+    
 /*border */
 }
 
-.row1 {
-    display: inline-block;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: blue;
-    border-radius: 50%;
-    justify-content: center;
+.row1{
+    border: solid 2px white;
+     width: 100%;
+     height: 120px;
+     display: flex;
+     justify-content: center;
+     
+     
+
+
+}
+.row1 div{
+    border: solid 2px blue;
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     background-color: aqua;
+     
+
 }
 
 </style>

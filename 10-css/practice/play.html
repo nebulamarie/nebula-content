@@ -1,0 +1,43 @@
+<html> 
+
+<body>
+      <div id = "greetings">
+        <h1> Greetings around the world</h1>
+        <div class="hello">
+                <p>Hello</p>
+            <div class="hola">
+                    <p>Hola</p>
+                <div class="bonjour">  
+                        <p>Bonjour</p> 
+            
+</div>
+</body>
+
+</html>
+
+<style>
+
+#greetings {
+  /* border */
+    display: flex;
+    border: solid 10px red;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    /*border */
+}
+.hello, .hola, .bonjour {
+  /* border */
+    flex-grow: 1;
+    display: flex;
+    border: solid 10px blue;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    flex-direction: column;
+    /*border */   
+}
+
+</style>

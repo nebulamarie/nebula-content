@@ -2,74 +2,55 @@
 div flexbox-container ↳ div header ↳ div flexbox-item ↳ div main ↳ div sidebar ↳ div flexbox-item ↳ div content ↳ div flexbox-item ↳ div footer ↳ div flexbox-item -->
 
 
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
 
 <head>
-    <head class="container"
-</head>
+    <div class="header"> 
 
-<body> 
-    <div> div</div>
-    <header class="flex header">Header</header>
-    <main class="flex-main">
-        <nav class="flex-nav"> sidenav</nav>
-        <article class="flex-article">maincontent</article>
-        <aside class="flex-aside">sidebar</aside>
-
-<footer>
-    <footer class="flex-foooter"> footer</footer>
-</body>
-
+</div>
+    </head>
+    
+    
+        <div class="container"> 
+            <div>Inner div</div>
+            <div class="menu"></div>
+            <div>Inner div</div>
+            <div class="content"></div>
+            <div>Inner div</div>
+            <div class="ads"></div>            
+    </div>
+        
+    <footer>footer</footer>
 </html>
 
-
 <style>
-* {
-    margin: 2px
-}
 
-body {
+.header {
+/* border */
     display: flex;
-    font-size: 24px;
-    color: white;
-    height: 100vh;
-    text-align: center;
-    flex-direction: column;
-}
+    border: solid 10px black;
+    height: 70%;
+    width: 80%;
+    justify-content: space-between;
+/*border */
+ }
 
-.flex-header {
-    background-color: blue;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
+ .container {
 
-.flex-main {
-    display: flex;
-    flex: 1;
-
-}
-
-.sidenav {
-    background-color: blue;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.maincontent {
-    background-color: blue;
-    padding-top: 3rem;
-    flex: 3 3;
-} 
-
-.sidebar {
-    background-color: blue;
-    padding-top: 3rem;
-    flex: 1 1 5rem;
-}
+ }
 
 .footer {
-    background-color: blue;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+/* border */
+    position: fixed;
+    display: flex;
+    border: solid 10px black;
+    height: 50px;
+    width: 80%;
+    bottom: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+/*border */
 }
+
 </style>

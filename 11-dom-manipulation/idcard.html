@@ -1,0 +1,88 @@
+<!-- /*
+The goal is to have someone to fill in their 'ID card info'
+  - [X] Create a folder with an index.html, styles.css & script.js
+  - [X] Hook up the files together - how do we test they are working?
+  - [ ] A user must be able to input their Name, id number, address & a fun fact about themselves
+    - [ ] Create a form with the appropriate inputs
+    - [ ] Create a button that will submit the form
+      - Note: Use e.preventDefault() to prevent the page from refreshing
+  - [ ] After clicking an update button their id card will update
+    - [ ] Style a div to look like an ID card - curved corners, an image (start with a  placeholder image)
+*/ -->
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src='idcard.js' defer></script>
+
+
+
+    
+<title>ID Card Info</title>
+   
+    
+<body>
+
+       <main>
+        <div class="container">
+           <img src ="https://place-puppy.com/300x300"> </img>
+           <div class="info">
+            <div id="cardName"></div>
+            <div id="cardNumber"></div>
+            <div id="cardAddress"></div>
+            <div id="cardFun"></div>
+           </div>
+        </div>
+        <h1> Name</h1>
+        <form >
+            <input
+                type="text"
+                id="name"
+                placeholder="Name"/>
+            
+        </form>
+
+        <h2>ID Number</h2>
+        <form >
+            <input
+                type="number"
+                id="number"
+                placeholder="Number"/>
+    
+        </form>
+
+        <h3>Address</h3>
+        <form>
+            <input
+                type="text"
+                id="address"
+                placeholder="address"/>
+            
+
+                <h4>Fun Fact</h4>
+                <form>
+                    <input
+                        type="text area"
+                        id="fun"
+                        placeholder="fun"/>
+                    
+        </form>
+
+                </div>
+                <div class="actions">
+                    <button type="button">submit</button>  
+                   
+                </div>
+            </div>
+
+        
+    </main>
+
+</body>
+</html>

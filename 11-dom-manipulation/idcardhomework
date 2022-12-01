@@ -1,0 +1,11 @@
+<!-- /*
+The goal is to have someone to fill in their 'ID card info'
+  - [X] Create a folder with an index.html, styles.css & script.js
+  - [X] Hook up the files together - how do we test they are working?
+  - [ ] A user must be able to input their Name, id number, address & a fun fact about themselves
+    - [ ] Create a form with the appropriate inputs
+    - [ ] Create a button that will submit the form
+      - Note: Use e.preventDefault() to prevent the page from refreshing
+  - [ ] After clicking an update button their id card will update
+    - [ ] Style a div to look like an ID card - curved corners, an image (start with a  placeholder image)
+*/ -->

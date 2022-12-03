@@ -1,3 +1,90 @@
 <!-- Using flexbox, create a pyramid of 6 items. The first row should have 1 item, the second row should have 2 items, the third row should have 3 items. The items should be squares, and ideally should all be touching. Use the following hierarchy:
 div flexbox-container ↳ div row1 ↳ div flexbox-item ↳ div row2 ↳ div flexbox-item ↳ div flexbox-item ↳ ... -->
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid</title>
+</head>
+<body>
+
+<div>
+    <div  id ="container"> 
+        <div class="row1">
+            <div></div>
+        </div>    
+        <div class="row2">
+            <div></div>
+            <div></div>
+        </div>    
+        <div class="row3">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+</div>
+
+       
+
+</body>
+</html>
+
+<style>
+#container {
+    display: flex;
+    flex-direction: column;
+    border: solid 10px black;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    width: 90%;
+    height: 100vh;
+}
+
+.row1 {
+
+    display: flex;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+}
+.row1 div {
+    display: flex;
+    border: solid 2px black;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.row2 {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    justify-content: center;
+}
+.row2 div {
+    display: flex;
+    border: solid 2px black;
+    background-color: rgb(0, 106, 255);
+    width: 100px;
+    height: 100px;
+}
+.row3 {
+display: flex;
+    width: 600px;
+    height: 100px;
+    justify-content: center;
+
+}
+.row3 div {
+    display: flex;
+    border: solid 2px black;
+    background-color: rgb(255, 0, 132);
+    width: 100px;
+    height: 100px;
+}
+</style>

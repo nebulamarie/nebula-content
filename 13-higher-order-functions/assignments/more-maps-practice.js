@@ -38,6 +38,4 @@ let newArray = messages.map(message => {
 console.log(filteredArray)
 
 // 3. Using the .map method and the provided array of strings (above), create a new array containing 3 strings. 
-// - The quote
-// - The year (2015)
-// - The source (Chris Pine - Learn JavaScript)
+

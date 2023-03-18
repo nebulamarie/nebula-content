@@ -1,8 +1,10 @@
 // 1.   What is the order of output?
+
 setTimeout(() => {
     console.log('a');
 }, 1);
 console.log('b');
+// 'b' would log first then 'a'
 
 new Promise( (res,rej) => {res('c')}).then((val) => console.log('d', val));
 console.log('e');
@@ -54,8 +56,28 @@ new Promise( (res) => {res('h')}).then(res => console.log(res, 'i'))
 //otherwise the .then method is activated"
 
 // 6.   Using HTML & CSS, write a promise that, after 5 seconds changes the existing text on the web-page
+HTML
+<button>PRESS</button>
 
+let button = document.querySelector('button');
 
+let state = true;
+button.addEventListener('click', e=> {
+ let apiCall = new Promise((resolve, reject)=>{
+   setTimeout(()=>{
+     if(true){
+       resolve('red')
+     }else{
+         reject('failure')
+       }
+       },2000)
+       })
+    
+apiCall.then(res =>{
+  let bod = document.querySelector('body');
+  bod.style.backgroundColor = res;
+}).catch(rej=>{console.log(rej,'rej')})
+})
 
 // // 7. What is the output of the following code?
 // const promise = new Promise(res => res(2));
@@ -63,17 +85,24 @@ new Promise( (res) => {res('h')}).then(res => console.log(res, 'i'))
 //     console.log(v);
 //     return v * 2;
 // })
+// return will be console.log 4
+
 // .then(v => {
 //     console.log(v);
 //     return v * 2;
 // })
+// return will be console.log 8
+
 // .then(v => {
 //     console.log(v);
 //     return v * 2;
 // })
+// return will be console.log 16
+
 // .finally(v => {
 //     console.log(v)
 // })
 
 // // 2
 // 4
+// console.log will be undefined

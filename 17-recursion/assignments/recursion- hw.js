@@ -2,16 +2,16 @@
 
 // 1. Write a recursive function that prints the numbers 1 through n. Printing should happen once per call to the function.
 
-function printNum(n) {
-    if (n == 0) {
-        return
-    }else {
-        console.log(n)
-        printNum(n-1)
-    }
+// function printNum(n) {
+//     if (n == 0) {
+//         return
+//     }else {
+//         console.log(n)
+//         printNum(n-1)
+//     }
 
-}
-console.log(printNum(3))
+// }
+// console.log(printNum(3))
 
 // 2. Let's create a recursive function that returns the factorial of a number. The factorial of a number is the product of all the integers from 1 to that number.
 // For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120. You should have a single input parameter, n, and return the factorial of that number.
@@ -69,3 +69,61 @@ console.log(printNum(3))
 //   return recursion(array)
 // }
 // console.log(addNums(1234))
+
+
+// [12/26/2022 7:26 PM] Devon Selvaggi
+// Write a function sum that takes in two numbers and returns their sum.
+
+
+
+// Write a function multiply that takes in two numbers and returns their product.
+// function times(n1, n2) {
+//     return(n1 * n2)
+// }
+// console.log(times(5, 6))
+
+// // Write a function findMax that takes in an array of numbers and returns the maximum value.
+// function findMax(array) {
+//     return (Math.max(...array))
+// }
+// console.log(findMax([5, 9, 4, 2]))
+
+// Write a function findMin that takes in an array of numbers and returns the minimum value.
+// function findMin(array) {
+//     return (Math.min(...array))
+// }
+// console.log(findMin([1, 3, 7]))
+
+// Write a function findAverage that takes in an array of numbers and returns the average value.
+// function findAverage(array) {
+//     let sum = 0
+//     sum = array.reduce((accu,curr)=>{return accu+curr},0)
+   
+//     return sum/(array.length)
+// } 
+// console.log(findAverage([2, 3, 3, 3]))
+
+
+// [12/26/2022 7:26 PM] Devon Selvaggi
+// Write a function isEven that takes in a number and returns true if the number is even, and false if the number is odd.
+
+// function isEven(num) {
+//     if (num % 2==0) {
+//         return ('true')
+//         return ('false')
+//     }   
+// }
+// console.log(isEven(103))
+
+// Write a function isPositive that takes in a number and returns true if the number is positive, and false if the number is negative or zero.
+function isPositive() {
+    let num = Math.sign
+   
+    if(num == 1){
+        return('true')
+        return('false')
+    }
+}
+console.log(isPositive(2))
+
+
